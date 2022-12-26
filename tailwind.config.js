@@ -36,9 +36,11 @@ module.exports = {
         //   pure: '#ffffff',
         //   light: '#f5f7fb',
         // },
-        // blue: {
-        //   dark: '#324d67',
-        // },
+        blue: {
+          dark: '#1f1f38',
+          darkLight: '#2c2c6c',
+          light: '#4db5ff',
+        },
         // black: {
         //   light: '#495057',
         //   faded: '#00000059',
@@ -54,7 +56,7 @@ module.exports = {
         // },
       },
       fontFamily: {
-        Public: ['"Public Sans"', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
       },
       // boxShadow: {
       //   '005': '0 0 5px',
