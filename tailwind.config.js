@@ -41,10 +41,10 @@ module.exports = {
           darkLight: '#2c2c6c',
           light: '#4db5ff',
         },
-        // black: {
-        //   light: '#495057',
-        //   faded: '#00000059',
-        // },
+        black: {
+          light: '#495057',
+          faded: '#0000004d',
+        },
         // gray: {
         //   base: '#5f5f5f',
         //   light: '#ebebeb',
