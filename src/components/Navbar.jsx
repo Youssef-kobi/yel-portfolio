@@ -10,7 +10,7 @@ const Navbar = () => {
       <a
         className={` hover:text-white  hover:scale-110 duration-500 p-4 rounded-full  hover:bg-black-faded ${
           active === '#home'
-            ? 'bg-black-faded text-white'
+            ? 'bg-blue-light text-white'
             : 'bg-transparent text-blue-light'
         }`}
         href='#home'
@@ -21,7 +21,7 @@ const Navbar = () => {
       <a
         className={` hover:text-white  hover:scale-110 duration-500 p-4 rounded-full  hover:bg-black-faded ${
           active === '#about'
-            ? 'bg-black-faded text-white'
+            ? 'bg-blue-light text-white'
             : 'bg-transparent text-blue-light'
         }`}
         href='#about'
@@ -32,7 +32,7 @@ const Navbar = () => {
       <a
         className={` hover:text-white  hover:scale-110 duration-500 p-4 rounded-full  hover:bg-black-faded ${
           active === '#experience'
-            ? 'bg-black-faded text-white'
+            ? 'bg-blue-light text-white'
             : 'bg-transparent text-blue-light'
         }`}
         href='#experience'
@@ -43,7 +43,7 @@ const Navbar = () => {
       <a
         className={`hover:text-white  hover:scale-110 duration-500 p-4 rounded-full  hover:bg-black-faded ${
           active === '#services'
-            ? 'bg-black-faded text-white'
+            ? 'bg-blue-light text-white'
             : 'bg-transparent text-blue-light'
         }`}
         href='#services'
@@ -54,7 +54,7 @@ const Navbar = () => {
       <a
         className={` hover:text-white  hover:scale-110 duration-500 p-4 rounded-full  hover:bg-black-faded ${
           active === '#contact'
-            ? 'bg-black-faded text-white'
+            ? 'bg-blue-light text-white'
             : 'bg-transparent text-blue-light'
         }`}
         href='#contact'
