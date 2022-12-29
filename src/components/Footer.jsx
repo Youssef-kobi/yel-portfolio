@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className='bg-blue-light py-12 text-sm mt-32'>
       <div className='text-center mb-12'>
-        <a className='font-semibold text-center text-3xl' href='/'>
-          LOGO
+        <a className='font-semibold text-center font-DM text-9xl text-blue-dark' href='/'>
+          Y
         </a>
       </div>
       {/* <About />

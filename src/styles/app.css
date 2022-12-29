@@ -615,9 +615,6 @@ video {
 .w-1\/4 {
   width: 25%;
 }
-.w-1\/2 {
-  width: 50%;
-}
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -672,12 +669,6 @@ video {
 .flex-col {
   flex-direction: column;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.items-start {
-  align-items: flex-start;
-}
 .items-center {
   align-items: center;
 }
@@ -731,10 +722,6 @@ video {
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-}
-.rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
 }
 .border {
   border-width: 1px;
@@ -793,14 +780,14 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
-}
-.p-10 {
-  padding: 2.5rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -818,14 +805,6 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -837,10 +816,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -856,6 +831,9 @@ video {
 }
 .font-Poppins {
   font-family: Poppins, sans-serif;
+}
+.font-DM {
+  font-family: "DM Serif Display", serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -880,6 +858,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 .font-medium {
   font-weight: 500;
@@ -933,7 +915,7 @@ video {
   transition-duration: 300ms;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
 body {
   background: url(/src/assets/bg-texture.png);
   background-color: #1f1f38;

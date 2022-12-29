@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fill: (theme) => ({
@@ -57,6 +55,7 @@ module.exports = {
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
+        DM: ['"DM Serif Display"', 'serif'],
       },
       // boxShadow: {
       //   '005': '0 0 5px',
@@ -67,4 +66,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
