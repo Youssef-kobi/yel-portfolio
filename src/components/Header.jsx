@@ -1,12 +1,12 @@
 import React from 'react';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
-import MyPicture from '../assets/me.png';
-
+import ModelThee from './Model3D';
+// import MyPicture from '../assets/me.png';
 const Header = () => {
   return (
     <header
       id='home'
-      className='container sm:h-screen md:h-[70vh] h-screen m-auto pt-28 overflow-hidden relative'
+      className='container h-screen m-auto pt-28 overflow-hidden relative'
     >
       <div className=' flex flex-col items-center w-full '>
         <div className=' flex flex-col items-center w-full pb-8 '>
@@ -25,8 +25,9 @@ const Header = () => {
             lets Chat
           </a>
         </div>
-        <div className=' bg-gradient-to-t from-transparent overflow-hidden to-blue-light w-96 h-[30rem] rounded-t-full p-4 mt-8'>
-          <img src={MyPicture} alt='' />
+        <div className=' bg-gradient-to-bl from-transparent h-[80vh] lg:w-3/6 md:w-4/6 w-5/6 overflow-hidden to-blue-light rounded-t-full my-8'>
+          {/* <img src={MyPicture} alt='' /> */}
+          <ModelThee />
         </div>
         <div className=' animate-bounce  absolute  bottom-20 -right-5 '>
           <a
@@ -51,7 +52,7 @@ const Header = () => {
           </a>
           <a
             className='text-blue-light hover:text-white hover:scale-110 duration-500'
-            href='https://linkedin.com/in/youssef-elkobi'
+            href='https://fiverr.com/youssefelkobi'
           >
             <svg
               // fill=''

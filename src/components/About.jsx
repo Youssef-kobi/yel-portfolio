@@ -37,10 +37,12 @@ const About = () => {
           </div>
           <div className='flex flex-col items-center lg:items-start'>
             <p className='m-4 lg:text-start'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              rem voluptatum ipsam suscipit ad, atque nihil quos facilis tempora
-              blanditiis error ipsa fugiat. Est dolore laudantium, repellendus
-              velit provident ut!cdececed cdecd
+              I'm a fullstack web developer with 4 years of experience and a
+              passion for creating powerful, user-friendly web applications. My
+              skillset includes JavaScript, React, Node, HTML, CSS, and JavaScript. I'm
+              always striving to learn new technologies and stay up-to-date with
+              the latest trends. I'm a fast learner and I believe in creating
+              clean, maintainable code.
             </p>
             <a
               className='duration-500 hover:bg-transparent w-1/3 bg-blue-light border border-blue-light rounded-lg px-5 py-3 m-4'
