@@ -72,13 +72,13 @@ const Experience = () => {
         My Experiences
       </h2>
       <div className='container grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4 px-4 mx-auto'>
-        <div className='bg-blue-darkLight hover:bg-transparent hover:scale-105 duration-300 hover:border border-blue-light rounded-3xl flex flex-col py-10 px-20 '>
+        <div className='bg-blue-darkLight hover:bg-transparent hover:scale-105 duration-300 hover:border border-blue-light rounded-3xl flex flex-col py-10 px-10 '>
           <h4>Front-End</h4>
-          <div className='flex flex-wrap mt-4'>
+          <div className='grid grid-cols-2 mt-4'>
             {frontEndSkills.map((item, index) => (
-              <article key={index} className='w-1/2 flex justify-center'>
-                <BsPatchCheckFill className='fill-blue-light mt-1.5' />
-                <div className='text-start ml-4'>
+              <article key={index} className=' w-full flex'>
+                <BsPatchCheckFill size={24} className='fill-blue-light mt-1.5' />
+                <div className='text-start w-full ml-4'>
                   <h4>{item.name}</h4>
                   <small className='text-gray-400'>{item.level}</small>
                 </div>
