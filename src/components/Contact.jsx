@@ -26,7 +26,7 @@ const Contact = () => {
       );
   };
   return (
-    <section id='contact' className=' text-center mt-12 mt-32 '>
+    <section id='contact' className=' text-center pt-32 '>
       <h5>Get In Touch</h5>
       <h2 className='text-2xl mb-12 font-semibold text-blue-light'>Contact Me</h2>
       <div className='container flex flex-col md:grid-cols-2 lg:flex-row items-center lg:items-start justify-center gap-8 mt-4 px-4 mx-auto'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
 import ModelThee from './Model3D';
 // import MyPicture from '../assets/me.png';
@@ -27,9 +28,23 @@ const Header = () => {
         </div>
         <div className=' bg-gradient-to-bl from-transparent h-[80vh] lg:w-3/6 md:w-4/6 w-5/6 overflow-hidden to-blue-light rounded-t-full my-8'>
           {/* <img src={MyPicture} alt='' /> */}
+          <div className='bottom-52 right-10 absolute bg-black-faded  z-20  rounded-3xl flex flex-col items-center lg:hidden justify-center'>
+            <a
+              href='#home'
+              className=' text-white rounded-full p-2 hover:bg-black-faded '
+            >
+              <AiOutlineCaretUp size={24} />
+            </a>
+            <a
+              href='#about'
+              className=' p-2 text-white  rounded-full hover:bg-black-faded'
+            >
+              <AiOutlineCaretDown size={24} />
+            </a>
+          </div>
           <ModelThee />
         </div>
-        <div className=' animate-bounce  absolute  bottom-20 -right-5 '>
+        <div className=' animate-bounce absolute  bottom-20 -right-5 '>
           <a
             href='#contact'
             className='hidden lg:block text-blue-light hover:text-white transform rotate-90 duration-500 text-sm font-light '

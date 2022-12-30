@@ -7,7 +7,7 @@ import portfolio5 from '../assets/portfolio5.png';
 import portfolio6 from '../assets/portfolio6.jpg';
 const Portfolio = () => {
   return (
-    <section id='portfolio' className=' text-center mt-32 '>
+    <section id='portfolio' className=' text-center pt-32 '>
       <h5>My Work?</h5>
       <h2 className='text-2xl mb-12 font-semibold text-blue-light'>
         here some of my projects

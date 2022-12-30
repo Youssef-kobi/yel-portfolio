@@ -1,5 +1,7 @@
 import React from 'react';
 import { BiCheck } from 'react-icons/bi';
+import Portfolio from './Portfolio';
+import Testimonials from './Testimonials';
 
 const Services = () => {
   const designServices = [
@@ -37,7 +39,7 @@ const Services = () => {
     'Web Hosting & Maintenance.',
   ];
   return (
-    <section id='services' className=' text-center mt-32'>
+    <section id='services' className=' text-center pt-32'>
       <h5>What Offer ?</h5>
       <h2 className='text-2xl mb-12 font-semibold text-blue-light'>
         My Services
@@ -83,6 +85,8 @@ const Services = () => {
           </ul>
         </div>
       </div>
+      <Portfolio />
+      <Testimonials />
     </section>
   );
 };

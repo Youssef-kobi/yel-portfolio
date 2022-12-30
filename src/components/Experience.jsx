@@ -66,7 +66,7 @@ const Experience = () => {
     },
   ];
   return (
-    <section id='experience' className=' text-center mt-32 '>
+    <section id='experience' className=' text-center pt-32 '>
       <h5>What Skills I Have ?</h5>
       <h2 className='text-2xl mb-12 font-semibold text-blue-light'>
         My Experiences
@@ -77,7 +77,10 @@ const Experience = () => {
           <div className='grid grid-cols-2 mt-4'>
             {frontEndSkills.map((item, index) => (
               <article key={index} className=' w-full flex'>
-                <BsPatchCheckFill size={24} className='fill-blue-light mt-1.5' />
+                <BsPatchCheckFill
+                  size={24}
+                  className='fill-blue-light mt-1.5'
+                />
                 <div className='text-start w-full ml-4'>
                   <h4>{item.name}</h4>
                   <small className='text-gray-400'>{item.level}</small>
@@ -89,7 +92,7 @@ const Experience = () => {
         <div className='bg-blue-darkLight hover:bg-transparent hover:scale-105 duration-300 hover:border border-blue-light rounded-3xl flex flex-col p-10'>
           <h4>Back-End</h4>
           <div className='grid grid-cols-2 mt-4'>
-          {backEndSkills.map((item, index) => (
+            {backEndSkills.map((item, index) => (
               <article key={index} className='w-full flex'>
                 <BsPatchCheckFill className='fill-blue-light mt-1.5' />
                 <div className='text-start ml-4'>

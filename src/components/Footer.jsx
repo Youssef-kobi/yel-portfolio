@@ -9,13 +9,6 @@ const Footer = () => {
           Y
         </a>
       </div>
-      {/* <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer /> */}
       <ul className='text-blue-dark flex  flex-col items-center lg:flex-wrap  justify-center gap-4 mb-16'>
         <li>
           <a href='#home'>Home</a>

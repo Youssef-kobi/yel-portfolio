@@ -4,7 +4,7 @@ import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
 const About = () => {
   return (
-    <section id='about' className=' text-center mt-32 '>
+    <section id='about' className=' text-center pt-32 '>
       <h5 className=''>Get To Know</h5>
       <h2 className='text-2xl mb-12 font-semibold text-blue-light'>About ME</h2>
       <div className='container grid grid-cols-1 lg:grid-cols-2 mt-4 mx-auto'>
