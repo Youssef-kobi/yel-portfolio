@@ -7,9 +7,7 @@ body {
   background: url(/src/assets/bg-texture.png);
   background-color: #1f1f38;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -19,4 +17,8 @@ html {
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
