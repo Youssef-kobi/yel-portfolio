@@ -3,6 +3,8 @@ import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai';
 import { ImGithub, ImLinkedin } from 'react-icons/im';
 import ModelThee from './Model3D';
 // import MyPicture from '../assets/me.png';
+
+import ReactGA from 'react-ga';
 const Header = () => {
   return (
     <header
@@ -21,6 +23,14 @@ const Header = () => {
           </button>
           <a
             href='#contact'
+            onClick={() =>
+              ReactGA.event({
+                category: 'button',
+                action: 'Clicked',
+                label: 'Header Lets Chat',
+                value: 1,
+              })
+            }
             className='duration-500 hover:bg-transparent bg-blue-light border border-blue-light rounded-lg px-5 py-3'
           >
             lets Chat
@@ -47,6 +57,14 @@ const Header = () => {
         <div className=' animate-bounce absolute  bottom-20 -right-5 '>
           <a
             href='#contact'
+            onClick={() =>
+              ReactGA.event({
+                category: 'button',
+                action: 'Clicked',
+                label: 'Header right Scroll',
+                value: 1,
+              })
+            }
             className='hidden lg:block text-blue-light hover:text-white transform rotate-90 duration-500 text-sm font-light '
           >
             Scroll Down
@@ -54,18 +72,42 @@ const Header = () => {
         </div>
         <div className='hidden ml-4 lg:flex flex-col items-center gap-3 absolute left-0 bottom-12  after:w-0.5 after:h-8 after:bg-blue-200'>
           <a
+            onClick={() =>
+              ReactGA.event({
+                category: 'Link',
+                action: 'Clicked',
+                label: 'Header LinkedIn',
+                value: 1,
+              })
+            }
             className='text-blue-light hover:text-white  hover:scale-110 duration-500'
             href='https://linkedin.com/in/youssef-elkobi'
           >
             <ImLinkedin size={24} />
           </a>
           <a
+            onClick={() =>
+              ReactGA.event({
+                category: 'Link',
+                action: 'Clicked',
+                label: 'Header Github',
+                value: 1,
+              })
+            }
             className='text-blue-light hover:text-white  hover:scale-110 duration-500'
             href='https://github.com/youssef-kobi'
           >
             <ImGithub size={24} />
           </a>
           <a
+            onClick={() =>
+              ReactGA.event({
+                category: 'Link',
+                action: 'Clicked',
+                label: 'Fiverr',
+                value: 1,
+              })
+            }
             className='text-blue-light hover:text-white hover:scale-110 duration-500'
             href='https://fiverr.com/youssefelkobi'
           >

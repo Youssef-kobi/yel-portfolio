@@ -2,6 +2,8 @@ import AboutMe from '../assets/me-about.jpg';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { VscFolderLibrary } from 'react-icons/vsc';
+import ReactGA from 'react-ga';
+
 const About = () => {
   return (
     <section id='about' className=' text-center pt-32 '>
@@ -39,12 +41,20 @@ const About = () => {
             <p className='m-4 lg:text-start'>
               I'm a fullstack web developer with 4 years of experience and a
               passion for creating powerful, user-friendly web applications. My
-              skillset includes JavaScript, React, Node, HTML, CSS, and JavaScript. I'm
-              always striving to learn new technologies and stay up-to-date with
-              the latest trends. I'm a fast learner and I believe in creating
-              clean, maintainable code.
+              skillset includes JavaScript, React, Node, HTML, CSS, and
+              JavaScript. I'm always striving to learn new technologies and stay
+              up-to-date with the latest trends. I'm a fast learner and I
+              believe in creating clean, maintainable code.
             </p>
             <a
+              onClick={() =>
+                ReactGA.event({
+                  category: 'Link',
+                  action: 'Clicked',
+                  label: 'About lets Talk',
+                  value: 1,
+                })
+              }
               className='duration-500 hover:bg-transparent w-1/3 bg-blue-light border border-blue-light rounded-lg px-5 py-3 m-4'
               href='#contact'
             >

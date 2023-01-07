@@ -2,6 +2,8 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { ImWhatsapp } from 'react-icons/im';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ReactGA from 'react-ga';
+
 const Contact = () => {
   const form = useRef();
 
@@ -28,7 +30,9 @@ const Contact = () => {
   return (
     <section id='contact' className=' text-center pt-32 '>
       <h5>Get In Touch</h5>
-      <h2 className='text-2xl mb-12 font-semibold text-blue-light'>Contact Me</h2>
+      <h2 className='text-2xl mb-12 font-semibold text-blue-light'>
+        Contact Me
+      </h2>
       <div className='container flex flex-col md:grid-cols-2 lg:flex-row items-center lg:items-start justify-center gap-8 mt-4 px-4 mx-auto'>
         <div className='flex flex-col gap-5 lg:w-1/4 w-full'>
           <article className=' text-center items-center bg-blue-darkLight pb-8 hover:bg-transparent hover:border border-transparent hover:border-blue-light duration-300 rounded-2xl p-8'>
@@ -38,6 +42,14 @@ const Contact = () => {
             <a
               className='text-xs text-blue-light'
               href='mailto:youssefkobi@gmail.com'
+              onClick={() =>
+                ReactGA.event({
+                  category: 'link',
+                  action: 'Clicked',
+                  label: 'Contact Send Email lets Talk',
+                  value: 1,
+                })
+              }
             >
               Send an Email
             </a>
@@ -47,6 +59,14 @@ const Contact = () => {
             <h4 className='text-xl'>Whatsapp</h4>
             <h5 className='text-xs mb-4 '>+212603428160</h5>
             <a
+              onClick={() =>
+                ReactGA.event({
+                  category: 'link',
+                  action: 'Clicked',
+                  label: 'Contact Send whatsapp',
+                  value: 1,
+                })
+              }
               className='text-xs text-blue-light'
               rel='noreferrer'
               target='_blank'
@@ -85,6 +105,14 @@ const Contact = () => {
           <button
             className='w-1/4 duration-500 hover:bg-transparent bg-blue-light border border-blue-light text-gray-900 font-semibold hover:text-white rounded-lg px-5 py-3'
             type='submit'
+            onClick={() =>
+              ReactGA.event({
+                category: 'button',
+                action: 'Clicked',
+                label: 'Contact default form message',
+                value: 1,
+              })
+            }
           >
             Send
           </button>
