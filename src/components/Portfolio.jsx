@@ -1,5 +1,5 @@
 import React from 'react';
-import portfolio from '../assets/portfolio1.jpg';
+import portfolio from '../assets/portfolio1.png';
 import portfolio2 from '../assets/portfolio2.jpg';
 import portfolio3 from '../assets/portfolio3.jpg';
 import portfolio4 from '../assets/portfolio4.jpg';
@@ -17,17 +17,17 @@ const Portfolio = () => {
           <div className='rounded-lg hover:scale-105 duration-300 overflow-hidden'>
             <img src={portfolio} alt='' />
           </div>
-          <h5 className='text-start my-4'>Project Name</h5>
+          <h5 className='text-start my-4'>React Firebase Boilerplate</h5>
           <div className='flex gap-4'>
             <a
               className='duration-500 hover:bg-transparent hover:bg-blue-light border border-blue-light rounded-lg px-5 py-3'
-              href='https://github.com/youssef-kobi'
+              href='https://github.com/Youssef-kobi/Firebase-Auth-Template'
             >
               Github
             </a>
             <a
               className='duration-500 hover:bg-transparent bg-blue-light border border-blue-light rounded-lg px-5 py-3'
-              href='https://github.com/youssef-kobi'
+              href='https://yel-firebase-auth.vercel.app'
             >
               View Demo
             </a>
