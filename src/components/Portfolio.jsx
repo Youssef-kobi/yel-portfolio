@@ -14,20 +14,24 @@ const Portfolio = () => {
       </h2>
       <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 px-4 mx-auto'>
         <article className='bg-blue-darkLight hover:bg-transparent duration-300 hover:border border-blue-light rounded-3xl flex flex-col p-10 '>
-          <div className='rounded-lg hover:scale-105 duration-300 overflow-hidden'>
-            <img src={portfolio} alt='' />
+          <div className='rounded-lg flex-1 hover:scale-105 duration-300 overflow-hidden'>
+            <img src={portfolio} alt='Firebase Auth boilerplate' className='w-full h-full' />
           </div>
           <h5 className='text-start my-4'>React Firebase Boilerplate</h5>
           <div className='flex gap-4'>
             <a
               className='duration-500 hover:bg-transparent hover:bg-blue-light border border-blue-light rounded-lg px-5 py-3'
               href='https://github.com/Youssef-kobi/Firebase-Auth-Template'
+              target='_blank'
+              rel='noreferrer'
             >
               Github
             </a>
             <a
               className='duration-500 hover:bg-transparent bg-blue-light border border-blue-light rounded-lg px-5 py-3'
               href='https://yel-firebase-auth.vercel.app'
+              target='_blank'
+              rel='noreferrer'
             >
               View Demo
             </a>
