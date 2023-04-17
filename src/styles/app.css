@@ -786,6 +786,9 @@ video {
 .fill-blue-light {
   fill: #4db5ff;
 }
+.object-cover {
+  object-fit: cover;
+}
 .p-8 {
   padding: 2rem;
 }
