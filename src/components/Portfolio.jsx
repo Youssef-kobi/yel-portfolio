@@ -14,7 +14,7 @@ const Portfolio = () => {
       </h2>
       <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 px-4 mx-auto'>
         <article className='bg-blue-darkLight hover:bg-transparent duration-300 hover:border border-blue-light rounded-3xl flex flex-col p-10 '>
-          <div className='rounded-lg flex-grow hover:scale-105 duration-300 overflow-hidden'>
+          <div className='rounded-lg flex-grow object-cover hover:scale-105 duration-300 overflow-hidden'>
             <img
               src={portfolio}
               alt='Firebase Auth boilerplate'
